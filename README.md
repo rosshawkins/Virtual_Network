@@ -103,9 +103,9 @@ SSH into the control node and follow the steps below:
     
     # Move Playbooks and hosts file Into `/etc/ansible`
    
-   $ cp project-1/playbooks/* .
+   $ cp project-1/ansible/playbooks/* .
    
-   $ cp project-1/files/* ./files
+   $ cp project-1/ansible/files/* ./files
 
 - Update the hosts file to include which machine is recieving the Docker and the local IP for that machine.  An example of what the hosts file should look like after updating is:
     
