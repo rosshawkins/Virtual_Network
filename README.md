@@ -93,27 +93,40 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 
   - Copy the yaml file to Ansible control node, specifically the roles directory.  To download from GitLab, use the following:
+  
     $ cd /etc/ansible
+    
     $ mkdir files
+    
     # Clone Repository + IaC Files
     $ git clone https://github.com/yourusername/project-1.git
+    
     # Move Playbooks and hosts file Into `/etc/ansible`
-    $ cp project-1/playbooks/* .
-    $ cp project-1/files/* ./files
+   
+   $ cp project-1/ansible/playbooks/* .
+   
+   $ cp project-1/ansible/files/* ./files
 
 - Update the hosts file to include which machine is recieving the Docker and the local IP for that machine.  An example of what the hosts file should look like after updating is:
+    
     [webservers]
+    
     10.0.1.5
+    
     10.0.1.6
+    
     10.0.1.8
 
     [elk]
+    
     10.1.0.5
 
 - Run the playbook, and navigate to target machine to check that the installation worked as expected.  To run the playbook, use the following commands:
+  
   $ cd /etc/ansible
+  
   $ ansible-playbook install_elk.yml elk
+  
   $ ansible-playbook install_filebeat.yml webservers
+ 
   $ ansible-playbook install_metricbeat.yml webservers
-
-
