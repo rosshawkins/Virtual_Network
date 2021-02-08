@@ -93,7 +93,9 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 
   - Copy the yaml file to Ansible control node, specifically the roles directory.  To download from GitLab, use the following:
+  
     $ cd /etc/ansible
+    
     $ mkdir files
     
     # Clone Repository + IaC Files
