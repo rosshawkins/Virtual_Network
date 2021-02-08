@@ -103,15 +103,9 @@ SSH into the control node and follow the steps below:
     
     # Move Playbooks and hosts file Into `/etc/ansible`
    
-<<<<<<< HEAD
    $ cp project-1/ansible/playbooks/* .
    
    $ cp project-1/ansible/files/* ./files
-=======
-   $ cp project-1/playbooks/* .
-   
-   $ cp project-1/files/* ./files
->>>>>>> d3db8970a08b650d5daec302b59bca0396670c0e
 
 - Update the hosts file to include which machine is recieving the Docker and the local IP for that machine.  An example of what the hosts file should look like after updating is:
     
@@ -135,10 +129,4 @@ SSH into the control node and follow the steps below:
   
   $ ansible-playbook install_filebeat.yml webservers
  
-<<<<<<< HEAD
   $ ansible-playbook install_metricbeat.yml webservers
-=======
-  $ ansible-playbook install_metricbeat.yml webservers
-
-
->>>>>>> d3db8970a08b650d5daec302b59bca0396670c0e
