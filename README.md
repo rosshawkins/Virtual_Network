@@ -109,13 +109,15 @@ SSH into the control node and follow the steps below:
     
     [webservers]
     
-    - 10.0.1.5
-    - 10.0.1.6
-    - 10.0.1.8
+    10.0.1.5
+    
+    10.0.1.6
+    
+    10.0.1.8
 
     [elk]
     
-    - 10.1.0.5
+    10.1.0.5
 
 - Run the playbook, and navigate to target machine to check that the installation worked as expected.  To run the playbook, use the following commands:
   
